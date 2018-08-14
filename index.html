@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js" async></script>
+</head>
+
+<body>
+    <nav class="nav-menu">
+        <i class="material-icons hamburger-icon" style="font-size:32px; color: white">menu</i>
+        <div class="nav-links-container">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <form action="" method="post" id="credit-card-form">
+            <label for="credit-card">Credit Card Number:</label>
+            <input id="credit-card" type="text" name="credit-card">
+            <!-- REMEMBER: this input type needs to be submit!! -->
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+    </main>
+
+</body>
+
+</html>
+
+<!-- Task: 
+Create a hamburger menu. It should show a regular nav bar for desktop computers and for phones, 
+it should show a hamburger menu 
+
+Steps:
+- make regular navigation
+- when size gets to a certain width, show clickable hamburger menu instead of links
+- when link clicked, show the navigation 
+
+
+Another way I could have implemented this:
+- instead of moving the navigation items from from one position to another, I could have created a new navigation
+with JQuery, and added it with a specific class that has the right styling 
+
+-->

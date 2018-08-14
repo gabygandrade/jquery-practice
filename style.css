@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.nav-menu {
+    background: grey;
+    height: 4vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px; 
+}
+
+.nav-menu a:hover{
+    color: black;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+main {
+    margin: 1%;
+}
+
+@media all and (max-width: 550px){
+    body {
+        display: block;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .nav-links-container {
+        display: none;
+    }
+
+    .nav-links-vertical-column {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        position: absolute;
+        top: 57px;
+        right: 0;
+        background:lightgray;
+        color: black;
+        padding:4%;
+    }
+
+    .nav-menu a {
+        color: black;
+        margin-bottom: 50%;
+    }
+
+    .nav-menu a:hover {
+        color: white;
+    }
+}
+
+/*
+What I learned
+
+- hide an element with display: non
+- show it with display: block or display: inline, etc.
+- can position an element with 
+position: absolute
+position: relative, etc. 
+& this doesnt conflict with display flex
+
+Why?
+No, absolutely positioning does not conflict with flex containers. 
+Making an element be a flex container only affects its inner layout
+ model, that is, the way in which its contents are laid out. 
+ Positioning affects the element itself, and can alter its outer role 
+ for flow layout.
+
+*/
